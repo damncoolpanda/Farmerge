@@ -1,0 +1,33 @@
+[gd_scene load_steps=9 format=4 uid="uid://41fok26p5hdp"]
+
+[ext_resource type="Texture2D" uid="uid://boofj3l6ntdfw" path="res://Objects/tiles/thornfloor.png" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://0njaljhdne60" path="res://Objects/tiles/transparent_64x64.png" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://deknu14uchmay" path="res://Objects/tiles/thornfloor_62x62.png" id="3_s1lr2"]
+[ext_resource type="Script" uid="uid://cgl0o1bf686jk" path="res://Scripts/field.gd" id="4_qruad"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
+texture = ExtResource("1_0xm2m")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]
+texture = ExtResource("2_h2yge")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fir65"]
+texture = ExtResource("3_s1lr2")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/probability = 0.2
+
+[sub_resource type="TileSet" id="TileSet_272bh"]
+tile_size = Vector2i(64, 64)
+sources/1 = SubResource("TileSetAtlasSource_lquwl")
+sources/2 = SubResource("TileSetAtlasSource_7mycd")
+sources/3 = SubResource("TileSetAtlasSource_fir65")
+
+[node name="Field" type="TileMapLayer"]
+tile_map_data = PackedByteArray("AAAAAAAAAwAAAAAAAAAAAAEAAwAAAAAAAAAAAAIAAwAAAAAAAAAAAAMAAwAAAAAAAAAAAAQAAwAAAAAAAAAAAAUAAwAAAAAAAAABAAAAAwAAAAAAAAABAAEAAwAAAAAAAAABAAIAAwAAAAAAAAABAAMAAwAAAAAAAAABAAQAAwAAAAAAAAABAAUAAwAAAAAAAAACAAAAAwAAAAAAAAACAAEAAwAAAAAAAAACAAIAAwAAAAAAAAACAAMAAwAAAAAAAAACAAQAAwAAAAAAAAACAAUAAwAAAAAAAAADAAAAAwAAAAAAAAADAAEAAwAAAAAAAAADAAIAAwAAAAAAAAADAAMAAwAAAAAAAAADAAQAAwAAAAAAAAADAAUAAwAAAAAAAAAEAAAAAwAAAAAAAAAEAAEAAwAAAAAAAAAEAAIAAwAAAAAAAAAEAAMAAwAAAAAAAAAEAAQAAwAAAAAAAAAEAAUAAwAAAAAAAAAFAAAAAwAAAAAAAAAFAAEAAwAAAAAAAAAFAAIAAwAAAAAAAAAFAAMAAwAAAAAAAAAFAAQAAwAAAAAAAAAFAAUAAwAAAAAAAAAGAAAAAwAAAAAAAAAGAAEAAwAAAAAAAAAGAAIAAwAAAAAAAAAGAAMAAwAAAAAAAAAGAAQAAwAAAAAAAAAGAAUAAwAAAAAAAAAHAAAAAwAAAAAAAAAHAAEAAwAAAAAAAAAHAAIAAwAAAAAAAAAHAAMAAwAAAAAAAAAHAAQAAwAAAAAAAAAHAAUAAwAAAAAAAAAIAAAAAwAAAAAAAAAIAAEAAwAAAAAAAAAIAAIAAwAAAAAAAAAIAAMAAwAAAAAAAAAIAAQAAwAAAAAAAAAIAAUAAwAAAAAAAAAJAAAAAwAAAAAAAAAJAAEAAwAAAAAAAAAJAAIAAwAAAAAAAAAJAAMAAwAAAAAAAAAJAAQAAwAAAAAAAAAJAAUAAwAAAAAAAAA=")
+tile_set = SubResource("TileSet_272bh")
+script = ExtResource("4_qruad")

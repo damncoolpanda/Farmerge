@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbi12kiv2r7th"]
+
+[ext_resource type="Script" uid="uid://bushl6n36p4bf" path="res://Scripts/button.gd" id="1_q7530"]
+
+[node name="Gui" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -192.0
+offset_right = 320.0
+offset_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(320, 192)
+mouse_filter = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -15.5
+offset_right = 48.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Add animal"
+script = ExtResource("1_q7530")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
