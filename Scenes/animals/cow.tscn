@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://q2i16sxg4te1"]
+
+[ext_resource type="Script" uid="uid://ceuhgsnyrjgmg" path="res://Scripts/animal.gd" id="1_2n3ex"]
+[ext_resource type="Texture2D" uid="uid://0ohjxi1d2emm" path="res://Objects/animals/cow.png" id="2_2n3ex"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oc4b8"]
+size = Vector2(64, 64)
+
+[node name="Animal" type="CharacterBody2D"]
+input_pickable = true
+script = ExtResource("1_2n3ex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_oc4b8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_2n3ex")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

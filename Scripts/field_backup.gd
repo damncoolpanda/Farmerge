@@ -3,28 +3,29 @@ extends TileMapLayer
 var cell_amount: int = 59
 var grid_dict: Dictionary = {}
 var grid_size: Array = [10,6]
-var new_animal
 
 @export var animals:Array[PackedScene] = []
 #var animal_scene = preload("res://Scenes/animal.tscn")
+var animal_scene = animals.pick_random()
+var new_animal
 
 func _ready() -> void:
 	start_print()
 	init_grid_dict()
-	add_animal(new_animal, randi_range(0,cell_amount)) #'animal' argument is not currently used 
+	new_animal = add_animal(animal_scene, randi_range(0,cell_amount))
 
 func _process(_delta: float) -> void:
 	pass
 
-func add_animal(_animal, location) -> void: #'animal' argument is not currently used 
-	var animal_scene = animals.pick_random()
-	var new_animal = animal_scene.instantiate()
+func add_animal(animal, location):
+	print(animals)
+	new_animal = animal.instantiate()
 	add_child(new_animal)
 	new_animal.position = map_to_local(get_used_cells()[location])
 	grid_dict[str(local_to_map(new_animal.position))]["occupied"] = true
 	grid_dict[str(local_to_map(new_animal.position))]["occupied_by"] = "animal"
 	print("'New animal' tile-position: ", local_to_map(new_animal.position))
-	#return new_animal
+	return new_animal
 
 func start_print() -> void:
 	#print('TileMapLayer Array: ', get_used_cells())

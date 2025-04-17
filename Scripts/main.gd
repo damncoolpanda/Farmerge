@@ -17,7 +17,7 @@ func start_print():
 	print('Viewport size: ', get_viewport_rect().size)
 
 	
-func _input(event: InputEvent) -> void:
+func _input(_event: InputEvent) -> void:
 	#Prints Nodes Tree
-	if Input.is_physical_key_pressed(KEY_T):
+	if Input.is_action_just_pressed("Print Tree"):
 		print(get_tree_string_pretty())
