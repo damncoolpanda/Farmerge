@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bpmx5vh7vdt88"]
+[gd_scene load_steps=4 format=3 uid="uid://bpmx5vh7vdt88"]
 
 [ext_resource type="Script" uid="uid://ceuhgsnyrjgmg" path="res://Scripts/animal.gd" id="1_4ov70"]
+[ext_resource type="Script" uid="uid://yp2yad3py403" path="res://Scripts/draggable.gd" id="2_i5bm7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oc4b8"]
 size = Vector2(64, 64)
@@ -14,5 +15,8 @@ shape = SubResource("RectangleShape2D_oc4b8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
-[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[node name="Draggable" type="Node2D" parent="."]
+script = ExtResource("2_i5bm7")
+
+[connection signal="mouse_entered" from="." to="Draggable" method="_on_animal_mouse_entered"]
+[connection signal="mouse_exited" from="." to="Draggable" method="_on_animal_mouse_exited"]
