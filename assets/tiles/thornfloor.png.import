@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvh3vemj1ffa3"
-path="res://.godot/imported/pig.png-2dd8991622c8a23fe0326775aa3ee98a.ctex"
+uid="uid://boofj3l6ntdfw"
+path="res://.godot/imported/thornfloor.png-f9346e03eaf5cab8f513fcb5f768625c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/animals/pig.png"
-dest_files=["res://.godot/imported/pig.png-2dd8991622c8a23fe0326775aa3ee98a.ctex"]
+source_file="res://assets/tiles/thornfloor.png"
+dest_files=["res://.godot/imported/thornfloor.png-f9346e03eaf5cab8f513fcb5f768625c.ctex"]
 
 [params]
 

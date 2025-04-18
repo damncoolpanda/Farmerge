@@ -1,7 +1,8 @@
 extends CharacterBody2D
 
 var mouseOver: bool
-var dragging: bool = false
+enum States {IDLE, DRAGGING, SPAWNING}
+var state: States = States.IDLE
 var initial_position: Vector2
 @onready var screen_size:Vector2 = get_viewport_rect().size
 @onready var field:TileMapLayer = get_parent()
@@ -19,14 +20,14 @@ func move_animal(event) -> void:
 	if event is InputEventMouseButton:
 		if event.is_action_pressed("LMB") && mouseOver:
 			initial_position = position
-			dragging = true
+			state = States.DRAGGING
 			position = get_global_mouse_position()
-		elif event.is_action_released("LMB") and dragging:
-			dragging = false
+		elif event.is_action_released("LMB") and state == States.DRAGGING:
+			state = States.IDLE
 			position = snap_to_grid(get_global_mouse_position())
 			update_cell_occupation()
 	elif event is InputEventMouseMotion:
-		if dragging:
+		if state == States.DRAGGING:
 			position = get_global_mouse_position()
 
 func snap_to_grid(pos: Vector2i) -> Vector2i:
@@ -37,8 +38,8 @@ func snap_to_grid(pos: Vector2i) -> Vector2i:
 
 func update_cell_occupation() -> void:
 	# Clear initial cell
-	field.grid_dict[str(field.local_to_map(initial_position))]["occupied"] = false
-	field.grid_dict[str(field.local_to_map(initial_position))]["occupied_by"] = null
+	field.grid_dict[field.local_to_map(initial_position)]["occupied"] = false
+	field.grid_dict[field.local_to_map(initial_position)]["occupied_by"] = null
 	# Occupy new cell
-	field.grid_dict[str(field.local_to_map(position))]["occupied"] = true
-	field.grid_dict[str(field.local_to_map(position))]["occupied_by"] = "animal"
+	field.grid_dict[field.local_to_map(position)]["occupied"] = true
+	field.grid_dict[field.local_to_map(position)]["occupied_by"] = "animal"

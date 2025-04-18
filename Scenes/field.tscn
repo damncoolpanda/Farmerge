@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=4 uid="uid://41fok26p5hdp"]
 
-[ext_resource type="Texture2D" uid="uid://boofj3l6ntdfw" path="res://Objects/tiles/thornfloor.png" id="1_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://0njaljhdne60" path="res://Objects/tiles/transparent_64x64.png" id="2_h2yge"]
-[ext_resource type="Texture2D" uid="uid://deknu14uchmay" path="res://Objects/tiles/thornfloor_62x62.png" id="3_s1lr2"]
+[ext_resource type="Texture2D" uid="uid://boofj3l6ntdfw" path="res://assets/tiles/thornfloor.png" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://0njaljhdne60" path="res://assets/tiles/transparent_64x64.png" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://deknu14uchmay" path="res://assets/tiles/thornfloor_62x62.png" id="3_s1lr2"]
 [ext_resource type="Script" uid="uid://cgl0o1bf686jk" path="res://Scripts/field.gd" id="4_qruad"]
 [ext_resource type="PackedScene" uid="uid://btfay747ad42t" path="res://Scenes/animals/chicken.tscn" id="5_kvtm8"]
 [ext_resource type="PackedScene" uid="uid://q2i16sxg4te1" path="res://Scenes/animals/cow.tscn" id="6_q1k20"]

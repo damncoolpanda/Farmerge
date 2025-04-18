@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de2n7chn0wery"
-path="res://.godot/imported/mud.png-e7a1af620f28312b7c8414407d13f7cf.ctex"
+uid="uid://0njaljhdne60"
+path="res://.godot/imported/transparent_64x64.png-f3ae41197da21109115866b8a272a0be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/tiles/mud.png"
-dest_files=["res://.godot/imported/mud.png-e7a1af620f28312b7c8414407d13f7cf.ctex"]
+source_file="res://assets/tiles/transparent_64x64.png"
+dest_files=["res://.godot/imported/transparent_64x64.png-f3ae41197da21109115866b8a272a0be.ctex"]
 
 [params]
 

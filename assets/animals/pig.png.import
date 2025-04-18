@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0ohjxi1d2emm"
-path="res://.godot/imported/cow.png-3ad800bd74cf5a3dde22506a6437a197.ctex"
+uid="uid://dvh3vemj1ffa3"
+path="res://.godot/imported/pig.png-3ff7a43d8a9598089e489ff5a9da6e9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/animals/cow.png"
-dest_files=["res://.godot/imported/cow.png-3ad800bd74cf5a3dde22506a6437a197.ctex"]
+source_file="res://assets/animals/pig.png"
+dest_files=["res://.godot/imported/pig.png-3ff7a43d8a9598089e489ff5a9da6e9d.ctex"]
 
 [params]
 

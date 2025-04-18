@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://deknu14uchmay"
-path="res://.godot/imported/thornfloor_62x62.png-c2aec405e089d1c46764b619edb9d831.ctex"
+path="res://.godot/imported/thornfloor_62x62.png-302069f44dc43cd88a5040cfa7a6bf06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/tiles/thornfloor_62x62.png"
-dest_files=["res://.godot/imported/thornfloor_62x62.png-c2aec405e089d1c46764b619edb9d831.ctex"]
+source_file="res://assets/tiles/thornfloor_62x62.png"
+dest_files=["res://.godot/imported/thornfloor_62x62.png-302069f44dc43cd88a5040cfa7a6bf06.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://boofj3l6ntdfw"
-path="res://.godot/imported/thornfloor.png-bde92b1f0af6091752d10a5f6fdac95e.ctex"
+uid="uid://dtq33ngum53w1"
+path="res://.godot/imported/goat.png-f493697d5df70d8391e74a13ab9d3207.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/tiles/thornfloor.png"
-dest_files=["res://.godot/imported/thornfloor.png-bde92b1f0af6091752d10a5f6fdac95e.ctex"]
+source_file="res://assets/animals/goat.png"
+dest_files=["res://.godot/imported/goat.png-f493697d5df70d8391e74a13ab9d3207.ctex"]
 
 [params]
 

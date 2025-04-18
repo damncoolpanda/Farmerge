@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dcpbbea8xwi42"]
 
 [ext_resource type="Script" uid="uid://ceuhgsnyrjgmg" path="res://Scripts/animal.gd" id="1_6s47f"]
-[ext_resource type="Texture2D" uid="uid://dvh3vemj1ffa3" path="res://Objects/animals/pig.png" id="2_6s47f"]
+[ext_resource type="Texture2D" uid="uid://dvh3vemj1ffa3" path="res://assets/animals/pig.png" id="2_6s47f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oc4b8"]
 size = Vector2(64, 64)
