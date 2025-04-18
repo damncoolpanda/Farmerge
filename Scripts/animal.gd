@@ -23,9 +23,13 @@ func move_animal(event) -> void:
 			state = States.DRAGGING
 			position = get_global_mouse_position()
 		elif event.is_action_released("LMB") and state == States.DRAGGING:
+			if field.grid_dict[field.local_to_map(snap_to_grid(get_global_mouse_position()))]["occupied"] == false:
+				position = snap_to_grid(snap_to_grid(get_global_mouse_position()))
+				update_cell_occupation()
+			else:
+				position = initial_position
 			state = States.IDLE
-			position = snap_to_grid(get_global_mouse_position())
-			update_cell_occupation()
+			
 	elif event is InputEventMouseMotion:
 		if state == States.DRAGGING:
 			position = get_global_mouse_position()
