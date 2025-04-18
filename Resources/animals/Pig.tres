@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="animalResource" load_steps=3 format=3 uid="uid://c7hxh4k1xkocg"]
+
+[ext_resource type="Script" uid="uid://c37t2ikycgujn" path="res://Scripts/AnimalResourseBase.gd" id="1_lx2b1"]
+[ext_resource type="Texture2D" uid="uid://dvh3vemj1ffa3" path="res://assets/animals/pig.png" id="2_tlyqf"]
+
+[resource]
+script = ExtResource("1_lx2b1")
+texture = ExtResource("2_tlyqf")
+animal_type = "Pig"
+product = "Truffels"
+metadata/_custom_type_script = "uid://c37t2ikycgujn"

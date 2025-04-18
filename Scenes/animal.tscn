@@ -1,20 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://c07n5hf805px"]
+[gd_scene load_steps=3 format=3 uid="uid://bpmx5vh7vdt88"]
 
-[ext_resource type="Script" uid="uid://ceuhgsnyrjgmg" path="res://Scripts/animal.gd" id="1_3vx5p"]
-[ext_resource type="Texture2D" uid="uid://dtq33ngum53w1" path="res://assets/animals/goat.png" id="2_3vx5p"]
+[ext_resource type="Script" uid="uid://ceuhgsnyrjgmg" path="res://Scripts/animal.gd" id="1_4ov70"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oc4b8"]
 size = Vector2(64, 64)
 
 [node name="Animal" type="CharacterBody2D"]
 input_pickable = true
-script = ExtResource("1_3vx5p")
+script = ExtResource("1_4ov70")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_oc4b8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_3vx5p")
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

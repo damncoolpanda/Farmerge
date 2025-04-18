@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="animalResource" load_steps=3 format=3 uid="uid://vt12t5in58ys"]
+
+[ext_resource type="Script" uid="uid://c37t2ikycgujn" path="res://Scripts/AnimalResourseBase.gd" id="1_ruwnw"]
+[ext_resource type="Texture2D" uid="uid://dtq33ngum53w1" path="res://assets/animals/goat.png" id="2_y4pq7"]
+
+[resource]
+script = ExtResource("1_ruwnw")
+texture = ExtResource("2_y4pq7")
+animal_type = "Goat"
+product = "Goat Milk"
+metadata/_custom_type_script = "uid://c37t2ikycgujn"

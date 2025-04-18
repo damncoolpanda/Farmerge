@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="animalResource" load_steps=3 format=3 uid="uid://baqlea7vlymow"]
+
+[ext_resource type="Script" uid="uid://c37t2ikycgujn" path="res://Scripts/AnimalResourseBase.gd" id="1_psbtr"]
+[ext_resource type="Texture2D" uid="uid://bbomtddfusn5" path="res://assets/animals/chicken.png" id="2_pj45a"]
+
+[resource]
+script = ExtResource("1_psbtr")
+texture = ExtResource("2_pj45a")
+animal_type = "Chicken"
+product = "Egg"
+metadata/_custom_type_script = "uid://c37t2ikycgujn"
